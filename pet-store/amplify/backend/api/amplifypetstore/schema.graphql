@@ -1,0 +1,10 @@
+type Per @model @auth(rules: [{allow: owner}, {allow: private, operations: [create, read]}]) {
+  id: ID!
+  name: String!
+  age: Int
+  breed: String
+  about: String
+  image: String
+  color: String
+}
+ 
